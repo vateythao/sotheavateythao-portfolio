@@ -2,7 +2,7 @@
 	<title>Sotheavatey Thao | Data Analyst Portfolio</title>
 	<meta
 		name="description"
-		content="Sotheavatey Thao's professional data analyst portfolio featuring SQL, Power BI, Python, and analytics projects."
+		content="Sotheavatey Thao's professional data analyst portfolio featuring SQL, Power BI, Python, ETL automation, and analytics projects."
 	/>
 </svelte:head>
 
@@ -51,8 +51,10 @@
 
 		<div class="hero-visual">
 			<div class="dashboard-placeholder">
-				<p>Power BI Dashboard</p>
-				<span>Your dashboard screenshot will go here</span>
+				<img
+					src="/images/retail-dashboard.png"
+					alt="Retail Analytics Power BI Dashboard"
+				/>
 			</div>
 		</div>
 	</main>
@@ -60,12 +62,15 @@
 	<section id="projects" class="featured-project">
 		<div class="section-heading">
 			<p>FEATURED PROJECT</p>
+
 			<h2>Retail Sales Analytics (2024–2026)</h2>
 
 			<div class="project-tags">
+				<span>Python</span>
 				<span>SQL Server</span>
 				<span>Power BI</span>
-				<span>Python</span>
+				<span>ETL</span>
+				<span>GitHub Actions</span>
 				<span>Data Modeling</span>
 			</div>
 		</div>
@@ -73,25 +78,37 @@
 		<div class="project-content">
 			<div class="project-info">
 				<p class="project-description">
-					An end-to-end retail analytics project using three years of sales
-					data to uncover trends, measure performance, and generate
-					actionable business insights.
+					An end-to-end retail analytics solution built with Python, SQL Server,
+					Power BI, and GitHub Actions. The project automates data cleaning,
+					validation, SQL loading, testing, exploratory analysis, and dashboard
+					reporting across three years of retail sales data from 2024–2026.
 				</p>
 
 				<ul class="project-highlights">
-					<li>✓ Built SQL data models and analytical views</li>
-					<li>✓ Developed an interactive Power BI dashboard</li>
-					<li>✓ Performed Python-based sales analysis</li>
-					<li>✓ Analyzed sales performance from 2024–2026</li>
+					<li>✓ Automated a Python ETL pipeline for 2024–2026 sales data</li>
+					<li>✓ Loaded cleaned data into SQL Server for analysis</li>
+					<li>✓ Built automated data-quality tests and pipeline logging</li>
+					<li>✓ Added GitHub Actions CI to validate the project on every push</li>
+					<li>✓ Created Python EDA charts and business insights</li>
+					<li>✓ Developed a 3-page interactive Power BI dashboard</li>
 				</ul>
 
-				<a href="#" class="primary-btn">View Case Study →</a>
+				<a
+					href="https://github.com/vateythao/retail-sql-powerbi-2024-2026"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="primary-btn"
+				>
+					View Project on GitHub →
+				</a>
 			</div>
 
 			<div class="project-dashboard">
 				<div class="project-image-placeholder">
-					<p>Retail Sales Dashboard</p>
-					<span>Your real Power BI screenshot will go here</span>
+					<img
+						src="/images/retail-dashboard.png"
+						alt="Retail Sales Analytics Power BI Dashboard"
+					/>
 				</div>
 			</div>
 		</div>
@@ -120,7 +137,12 @@
 		background: #050914;
 		color: #f4f8ff;
 		font-family:
-			Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+			Inter,
+			ui-sans-serif,
+			system-ui,
+			-apple-system,
+			BlinkMacSystemFont,
+			"Segoe UI",
 			sans-serif;
 	}
 
@@ -129,7 +151,11 @@
 		min-height: 100vh;
 		overflow: hidden;
 		background:
-			radial-gradient(circle at 50% -20%, rgba(23, 102, 255, 0.15), transparent 40%),
+			radial-gradient(
+				circle at 50% -20%,
+				rgba(23, 102, 255, 0.15),
+				transparent 40%
+			),
 			linear-gradient(180deg, #07101f 0%, #050914 48%, #04070e 100%);
 	}
 
@@ -139,8 +165,15 @@
 		pointer-events: none;
 		opacity: 0.13;
 		background-image:
-			linear-gradient(rgba(94, 155, 255, 0.3) 1px, transparent 1px),
-			linear-gradient(90deg, rgba(94, 155, 255, 0.3) 1px, transparent 1px);
+			linear-gradient(
+				rgba(94, 155, 255, 0.3) 1px,
+				transparent 1px
+			),
+			linear-gradient(
+				90deg,
+				rgba(94, 155, 255, 0.3) 1px,
+				transparent 1px
+			);
 		background-size: 52px 52px;
 		mask-image: linear-gradient(to bottom, black, transparent 72%);
 	}
@@ -310,35 +343,29 @@
 
 	.hero-visual {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
 	}
 
 	.dashboard-placeholder {
-		width: 100%;
-		max-width: 520px;
-		height: 310px;
-		border: 1px solid #31415a;
-		border-radius: 16px;
-		background:
-			linear-gradient(145deg, rgba(22, 38, 63, 0.95), rgba(10, 19, 33, 0.95));
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		box-shadow: 0 25px 60px rgba(0, 0, 0, 0.32);
+	width: 100%;
+	max-width: 620px;
+	padding: 8px;
+	border: 1px solid rgba(91, 154, 255, 0.35);
+	border-radius: 18px;
+	background: #ffffff;
+	box-shadow:
+		0 30px 70px rgba(0, 0, 0, 0.4),
+		0 0 40px rgba(38, 120, 232, 0.12);
+	overflow: hidden;
 	}
 
-	.dashboard-placeholder p {
-		margin: 0 0 8px;
-		color: white;
-		font-size: 22px;
-		font-weight: 700;
-	}
-
-	.dashboard-placeholder span {
-		color: #71829b;
-		font-size: 13px;
+	.dashboard-placeholder img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 12px;
 	}
 
 	.featured-project {
@@ -411,6 +438,7 @@
 		margin-bottom: 16px;
 		color: #20334f;
 		font-size: 15px;
+		line-height: 1.5;
 	}
 
 	.project-image-placeholder {
@@ -419,23 +447,14 @@
 		border-radius: 14px;
 		background: #ffffff;
 		box-shadow: 0 15px 40px rgba(20, 43, 75, 0.1);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+		overflow: hidden;
 	}
 
-	.project-image-placeholder p {
-		margin: 0 0 8px;
-		color: #0b1930;
-		font-size: 22px;
-		font-weight: 700;
-	}
-
-	.project-image-placeholder span {
-		color: #7b8798;
-		font-size: 13px;
+	.project-image-placeholder img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		display: block;
 	}
 
 	footer {
@@ -516,6 +535,10 @@
 
 		.featured-project {
 			padding: 70px 20px;
+		}
+
+		.dashboard-placeholder {
+			height: 240px;
 		}
 
 		.project-image-placeholder {
