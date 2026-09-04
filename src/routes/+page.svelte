@@ -22,7 +22,15 @@
 			<a href="#about">About</a>
 			<a href="#projects">Projects</a>
 			<a href="#skills">Skills</a>
-			<a href="#resume">Resume</a>
+
+			<a
+				href="/docs/Sotheavatey_Thao_Data_Analyst_Resume.pdf"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Resume
+			</a>
+
 			<a href="#contact">Contact</a>
 		</nav>
 	</header>
@@ -46,8 +54,18 @@
 			</div>
 
 			<div class="hero-buttons">
-				<a href="#projects" class="primary-btn">View My Projects</a>
-				<a href="#resume" class="secondary-btn">Download Resume</a>
+				<a href="#projects" class="primary-btn">
+					View My Projects
+				</a>
+
+				<a
+					href="/docs/Sotheavatey_Thao_Data_Analyst_Resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="secondary-btn"
+				>
+					Download Resume
+				</a>
 			</div>
 		</div>
 
@@ -61,7 +79,7 @@
 		</div>
 	</main>
 
-	<!-- FEATURED RETAIL PROJECT -->
+	<!-- RETAIL ANALYTICS PROJECT -->
 	<section id="projects" class="featured-project">
 		<div class="section-heading">
 			<p>FEATURED PROJECT</p>
@@ -123,7 +141,9 @@
 			<div class="capstone-heading">
 				<p>GRADUATE CAPSTONE RESEARCH</p>
 
-				<h2>Post-Quantum Cryptography & Enterprise Security Migration</h2>
+				<h2>
+					Post-Quantum Cryptography & Enterprise Security Migration
+				</h2>
 
 				<div class="project-tags">
 					<span>Cybersecurity</span>
@@ -150,8 +170,8 @@
 						</li>
 
 						<li>
-							✓ Analyzed an IBM Db2 post-quantum cryptography migration case
-							study
+							✓ Analyzed an IBM Db2 post-quantum cryptography migration
+							case study
 						</li>
 
 						<li>
@@ -165,8 +185,8 @@
 						</li>
 
 						<li>
-							✓ Proposed governance, vendor coordination, testing, and workforce
-							recommendations
+							✓ Proposed governance, vendor coordination, testing, and
+							workforce recommendations
 						</li>
 					</ul>
 
@@ -275,6 +295,7 @@
 				<div class="about-cards">
 					<div class="about-card">
 						<span class="about-number">01</span>
+
 						<h3>Data Analysis</h3>
 
 						<p>
@@ -285,6 +306,7 @@
 
 					<div class="about-card">
 						<span class="about-number">02</span>
+
 						<h3>Data Engineering</h3>
 
 						<p>
@@ -295,6 +317,7 @@
 
 					<div class="about-card">
 						<span class="about-number">03</span>
+
 						<h3>Business Intelligence</h3>
 
 						<p>
@@ -375,6 +398,53 @@
 						<span>VS Code</span>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section id="contact" class="contact-section">
+		<div class="contact-container">
+			<div class="contact-heading">
+				<p>GET IN TOUCH</p>
+
+				<h2>Let’s Connect</h2>
+
+				<p>
+					I’m interested in data analyst, business intelligence, and analytics
+					opportunities where I can apply SQL, Python, Power BI, and data
+					visualization skills to solve real business problems.
+				</p>
+			</div>
+
+			<div class="contact-links">
+				<a
+					href="mailto:vatey8877@gmail.com"
+					class="contact-card"
+				>
+					<span>Email</span>
+					<strong>vatey8877@gmail.com</strong>
+				</a>
+
+				<a
+					href="https://www.linkedin.com/in/sotheavatey-t-aa0283170/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="contact-card"
+				>
+					<span>LinkedIn</span>
+					<strong>Connect with me</strong>
+				</a>
+
+				<a
+					href="https://github.com/vateythao"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="contact-card"
+				>
+					<span>GitHub</span>
+					<strong>View my projects</strong>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -638,7 +708,7 @@
 		border-radius: 17px;
 	}
 
-	/* FEATURED PROJECT */
+	/* RETAIL PROJECT */
 
 	.featured-project {
 		position: relative;
@@ -729,7 +799,7 @@
 		display: block;
 	}
 
-	/* CAPSTONE PROJECT */
+	/* CAPSTONE */
 
 	.capstone-project {
 		position: relative;
@@ -1007,6 +1077,89 @@
 		font-size: 13px;
 	}
 
+	/* CONTACT */
+
+	.contact-section {
+		position: relative;
+		z-index: 2;
+		padding: 100px 8%;
+		background: #07101f;
+		color: #ffffff;
+	}
+
+	.contact-container {
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+
+	.contact-heading {
+		max-width: 760px;
+		margin: 0 auto 50px;
+		text-align: center;
+	}
+
+	.contact-heading > p:first-child {
+		margin: 0 0 12px;
+		color: #4d9cff;
+		font-size: 13px;
+		font-weight: 800;
+		letter-spacing: 0.14em;
+	}
+
+	.contact-heading h2 {
+		margin: 0 0 18px;
+		font-size: clamp(32px, 4vw, 44px);
+		letter-spacing: -0.03em;
+	}
+
+	.contact-heading p:last-child {
+		margin: 0;
+		color: #aebbd0;
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	.contact-links {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.contact-card {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding: 28px;
+		border: 1px solid rgba(91, 154, 255, 0.18);
+		border-radius: 16px;
+		background: rgba(15, 28, 48, 0.72);
+		text-decoration: none;
+		transition:
+			transform 0.2s ease,
+			border-color 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.contact-card:hover {
+		transform: translateY(-4px);
+		border-color: rgba(91, 154, 255, 0.5);
+		background: rgba(19, 36, 61, 0.9);
+	}
+
+	.contact-card span {
+		color: #4d9cff;
+		font-size: 12px;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.contact-card strong {
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
 	/* FOOTER */
 
 	footer {
@@ -1083,6 +1236,10 @@
 		.skills-grid {
 			grid-template-columns: 1fr;
 		}
+
+		.contact-links {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	/* MOBILE */
@@ -1114,7 +1271,8 @@
 		.featured-project,
 		.capstone-project,
 		.about-section,
-		.skills-section {
+		.skills-section,
+		.contact-section {
 			padding: 70px 20px;
 		}
 
