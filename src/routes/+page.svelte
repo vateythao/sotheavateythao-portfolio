@@ -2,7 +2,7 @@
 	<title>Sotheavatey Thao | Data Analyst Portfolio</title>
 	<meta
 		name="description"
-		content="Sotheavatey Thao's professional data analyst portfolio featuring SQL, Power BI, Python, ETL automation, analytics, and cybersecurity research projects."
+		content="Sotheavatey Thao's professional data analyst portfolio featuring SQL, Power BI, Python, and analytics projects."
 	/>
 </svelte:head>
 
@@ -11,7 +11,7 @@
 	<div class="glow glow-one"></div>
 	<div class="glow glow-two"></div>
 
-	<!-- HEADER -->
+	<!-- NAVIGATION -->
 	<header class="site-header">
 		<a class="brand" href="/" aria-label="Sotheavatey Thao home">
 			<div class="brand-name">Sotheavatey Thao</div>
@@ -22,20 +22,12 @@
 			<a href="#about">About</a>
 			<a href="#projects">Projects</a>
 			<a href="#skills">Skills</a>
-
-			<a
-				href="/docs/Sotheavatey_Thao_Data_Analyst_Resume.pdf"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Resume
-			</a>
-
+			<a href="#resume">Resume</a>
 			<a href="#contact">Contact</a>
 		</nav>
 	</header>
 
-	<!-- HERO -->
+	<!-- HERO SECTION -->
 	<main id="home" class="hero">
 		<div class="hero-content">
 			<p class="intro">HI, I'M SOTHEAVATEY THAO</p>
@@ -61,25 +53,26 @@
 				<a
 					href="/docs/Sotheavatey_Thao_Data_Analyst_Resume.pdf"
 					target="_blank"
-					rel="noopener noreferrer"
+					rel="noreferrer"
 					class="secondary-btn"
 				>
-					Download Resume
+					View Resume
 				</a>
 			</div>
 		</div>
 
 		<div class="hero-visual">
-			<div class="dashboard-placeholder">
+			<div class="dashboard-image-wrapper">
 				<img
 					src="/images/retail-dashboard.png"
-					alt="Retail Analytics Power BI Dashboard"
+					alt="Retail Sales Analytics Power BI Dashboard"
+					class="dashboard-image"
 				/>
 			</div>
 		</div>
 	</main>
 
-	<!-- RETAIL ANALYTICS PROJECT -->
+	<!-- FEATURED PROJECT -->
 	<section id="projects" class="featured-project">
 		<div class="section-heading">
 			<p>FEATURED PROJECT</p>
@@ -87,11 +80,9 @@
 			<h2>Retail Sales Analytics (2024–2026)</h2>
 
 			<div class="project-tags">
-				<span>Python</span>
 				<span>SQL Server</span>
 				<span>Power BI</span>
-				<span>ETL</span>
-				<span>GitHub Actions</span>
+				<span>Python</span>
 				<span>Data Modeling</span>
 			</div>
 		</div>
@@ -99,361 +90,266 @@
 		<div class="project-content">
 			<div class="project-info">
 				<p class="project-description">
-					An end-to-end retail analytics solution built with Python, SQL Server,
-					Power BI, and GitHub Actions. The project automates data cleaning,
-					validation, SQL loading, testing, exploratory analysis, and dashboard
-					reporting across three years of retail sales data from 2024–2026.
+					An end-to-end retail analytics project using three years of sales
+					data to uncover trends, measure business performance, and generate
+					actionable insights.
 				</p>
 
 				<ul class="project-highlights">
-					<li>✓ Automated a Python ETL pipeline for 2024–2026 sales data</li>
-					<li>✓ Loaded cleaned data into SQL Server for analysis</li>
-					<li>✓ Built automated data-quality tests and pipeline logging</li>
-					<li>✓ Added GitHub Actions CI to validate the project on every push</li>
-					<li>✓ Created Python EDA charts and business insights</li>
-					<li>✓ Developed a 3-page interactive Power BI dashboard</li>
+					<li>
+						<span class="check">✓</span>
+						Built SQL data models and analytical views
+					</li>
+
+					<li>
+						<span class="check">✓</span>
+						Developed an interactive Power BI dashboard
+					</li>
+
+					<li>
+						<span class="check">✓</span>
+						Performed Python-based sales analysis
+					</li>
+
+					<li>
+						<span class="check">✓</span>
+						Analyzed sales performance from 2024–2026
+					</li>
 				</ul>
 
-				<a
-					href="https://github.com/vateythao/retail-sql-powerbi-2024-2026"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="primary-btn"
-				>
-					View Project on GitHub →
-				</a>
+				<div class="project-buttons">
+					<a
+						href="/projects/retail-sales-analytics"
+						class="primary-btn"
+					>
+						View Project Details →
+					</a>
+
+					<a
+						href="https://github.com/vateythao/retail-sql-powerbi-2024-2026"
+						target="_blank"
+						rel="noreferrer"
+						class="github-btn"
+					>
+						View GitHub
+					</a>
+				</div>
 			</div>
 
 			<div class="project-dashboard">
-				<div class="project-image-placeholder">
+				<div class="project-image-wrapper">
 					<img
-						src="/images/retail-dashboard.png"
-						alt="Retail Sales Analytics Power BI Dashboard"
+						src="/images/monthly-performance.png"
+						alt="Monthly Sales Performance Power BI Dashboard"
+						class="project-image"
 					/>
 				</div>
+
+				<p class="image-caption">
+					Monthly Sales Performance Dashboard
+				</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- CAPSTONE PROJECT -->
-	<section class="capstone-project">
-		<div class="capstone-container">
-			<div class="capstone-heading">
-				<p>GRADUATE CAPSTONE RESEARCH</p>
+	<!-- SKILLS -->
+	<!-- CAPSTONE RESEARCH -->
+<section class="capstone-section">
+	<div class="capstone-container">
+
+		<div class="capstone-label">
+			GRADUATE CAPSTONE RESEARCH
+		</div>
+
+		<div class="capstone-content">
+
+			<div class="capstone-info">
 
 				<h2>
-					Post-Quantum Cryptography & Enterprise Security Migration
+					Post-Quantum Cryptography
 				</h2>
 
-				<div class="project-tags">
+				<p class="capstone-subtitle">
+					Enterprise Security & Quantum Readiness
+				</p>
+
+				<p class="capstone-description">
+					Graduate capstone research examining the security risks
+					created by quantum computing and the challenges organizations
+					face when preparing for migration to post-quantum
+					cryptographic standards.
+				</p>
+
+				<div class="capstone-tags">
 					<span>Cybersecurity</span>
 					<span>Post-Quantum Cryptography</span>
-					<span>NIST</span>
-					<span>Enterprise Security</span>
-					<span>Risk Management</span>
+					<span>Research</span>
+					<span>Technology Management</span>
 				</div>
+
+				<a
+					href="/docs/Sotheavatey_Thao_Post_Quantum_Capstone.pdf"
+					target="_blank"
+					rel="noreferrer"
+					class="primary-btn"
+				>
+					View Capstone Research →
+				</a>
+
 			</div>
 
-			<div class="capstone-content">
-				<div class="capstone-info">
-					<p class="capstone-description">
-						A graduate research project examining how enterprises can migrate
-						from quantum-vulnerable public-key cryptography to post-quantum
-						cryptography while maintaining security, performance,
-						interoperability, and business continuity.
-					</p>
+			<div class="capstone-visual">
 
-					<ul class="project-highlights">
-						<li>
-							✓ Synthesized NIST standards, scholarly research, and industry
-							guidance
-						</li>
+				<div class="research-card">
 
-						<li>
-							✓ Analyzed an IBM Db2 post-quantum cryptography migration
-							case study
-						</li>
+					<div class="research-icon">
+						PQC
+					</div>
 
-						<li>
-							✓ Evaluated crypto agility, legacy-system dependencies, and
-							migration risks
-						</li>
+					<p>MASTER'S CAPSTONE</p>
 
-						<li>
-							✓ Developed a Discover → Prioritize → Pilot → Scale → Sustain
-							migration roadmap
-						</li>
+					<h3>
+						Preparing Enterprise Security
+						for the Post-Quantum Era
+					</h3>
 
-						<li>
-							✓ Proposed governance, vendor coordination, testing, and
-							workforce recommendations
-						</li>
-					</ul>
+					<span>
+						Research • Security • Strategy
+					</span>
 
-					<a
-						href="/docs/Sotheavatey_Thao_Post_Quantum_Capstone.pdf"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="primary-btn"
-					>
-						Read Capstone Research →
-					</a>
 				</div>
 
-				<div class="capstone-roadmap">
-					<div class="roadmap-step">
-						<span>01</span>
+			</div>
 
-						<div class="roadmap-content">
-							<strong>Discover</strong>
-							<p>
-								Inventory cryptography, systems, owners, vendors, and
-								dependencies.
-							</p>
-						</div>
-					</div>
+		</div>
 
-					<div class="roadmap-step">
-						<span>02</span>
+	</div>
+</section>
+	<section id="skills" class="skills-section">
+		<div class="skills-heading">
+			<p>SKILLS & TOOLS</p>
+			<h2>My Analytics Toolkit</h2>
+		</div>
 
-						<div class="roadmap-content">
-							<strong>Prioritize</strong>
-							<p>
-								Rank systems by sensitivity, criticality, and migration
-								difficulty.
-							</p>
-						</div>
-					</div>
+		<div class="skills-grid">
+			<div class="skill-card">
+				<h3>Data Analysis</h3>
+				<p>Python</p>
+				<p>Pandas</p>
+				<p>Excel</p>
+			</div>
 
-					<div class="roadmap-step">
-						<span>03</span>
+			<div class="skill-card">
+				<h3>Databases</h3>
+				<p>SQL</p>
+				<p>SQL Server</p>
+				<p>MySQL</p>
+			</div>
 
-						<div class="roadmap-content">
-							<strong>Pilot</strong>
-							<p>
-								Test security, performance, interoperability, and rollback.
-							</p>
-						</div>
-					</div>
+			<div class="skill-card">
+				<h3>Business Intelligence</h3>
+				<p>Power BI</p>
+				<p>DAX</p>
+				<p>Power Query</p>
+			</div>
 
-					<div class="roadmap-step">
-						<span>04</span>
+			<div class="skill-card">
+				<h3>Data Engineering</h3>
+				<p>ETL</p>
+				<p>Data Cleaning</p>
+				<p>Data Modeling</p>
+			</div>
 
-						<div class="roadmap-content">
-							<strong>Scale</strong>
-							<p>
-								Migrate systems in controlled waves with vendor coordination.
-							</p>
-						</div>
-					</div>
-
-					<div class="roadmap-step">
-						<span>05</span>
-
-						<div class="roadmap-content">
-							<strong>Sustain</strong>
-							<p>
-								Monitor, document, train, and maintain crypto agility.
-							</p>
-						</div>
-					</div>
-				</div>
+			<div class="skill-card">
+				<h3>Development</h3>
+				<p>Git</p>
+				<p>GitHub</p>
+				<p>SvelteKit</p>
 			</div>
 		</div>
 	</section>
 
 	<!-- ABOUT -->
 	<section id="about" class="about-section">
-		<div class="about-container">
-			<div class="about-heading">
-				<p>ABOUT ME</p>
+		<div class="about-content">
+			<div>
+				<p class="section-label">ABOUT ME</p>
 
-				<h2>Turning Data Into Clear Business Insights</h2>
+				<h2>
+					Turning data into clear business insights.
+				</h2>
 			</div>
 
-			<div class="about-content">
-				<div class="about-text">
-					<p>
-						I am a data analyst with a background in software engineering and
-						hands-on experience building end-to-end analytics solutions using
-						SQL, Python, Power BI, and data modeling.
-					</p>
+			<div class="about-text">
+				<p>
+					I'm a data analyst with a background in software engineering
+					and computer science. I enjoy transforming complex datasets
+					into clear, actionable insights through data cleaning,
+					analysis, modeling, and visualization.
+				</p>
 
-					<p>
-						I enjoy transforming raw and complex data into clean, reliable
-						datasets, interactive dashboards, and practical insights that help
-						support better business decisions.
-					</p>
-
-					<p>
-						My portfolio projects focus on real-world analytics workflows,
-						including data cleaning, ETL automation, SQL analysis, data-quality
-						testing, exploratory analysis, and business intelligence reporting.
-					</p>
-				</div>
-
-				<div class="about-cards">
-					<div class="about-card">
-						<span class="about-number">01</span>
-
-						<h3>Data Analysis</h3>
-
-						<p>
-							Exploring data to identify trends, patterns, and business
-							opportunities.
-						</p>
-					</div>
-
-					<div class="about-card">
-						<span class="about-number">02</span>
-
-						<h3>Data Engineering</h3>
-
-						<p>
-							Cleaning, transforming, validating, and preparing data for
-							reliable analysis.
-						</p>
-					</div>
-
-					<div class="about-card">
-						<span class="about-number">03</span>
-
-						<h3>Business Intelligence</h3>
-
-						<p>
-							Building dashboards and reports that communicate insights
-							clearly.
-						</p>
-					</div>
-				</div>
+				<p>
+					My work combines SQL, Python, Power BI, and business
+					intelligence techniques to build data solutions that help
+					organizations better understand their performance.
+				</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- SKILLS -->
-	<section id="skills" class="skills-section">
-		<div class="skills-container">
-			<div class="skills-heading">
-				<p>TECHNICAL SKILLS</p>
-
-				<h2>Tools I Use to Work With Data</h2>
-
-				<p class="skills-intro">
-					My analytics workflow combines programming, databases, data
-					visualization, and development tools to turn raw data into reliable
-					business insights.
-				</p>
-			</div>
-
-			<div class="skills-grid">
-				<div class="skill-card">
-					<div class="skill-icon">01</div>
-
-					<h3>SQL & Databases</h3>
-
-					<div class="skill-tags">
-						<span>SQL Server</span>
-						<span>SSMS</span>
-						<span>MySQL</span>
-						<span>Data Modeling</span>
-					</div>
-				</div>
-
-				<div class="skill-card">
-					<div class="skill-icon">02</div>
-
-					<h3>Python & Analytics</h3>
-
-					<div class="skill-tags">
-						<span>Python</span>
-						<span>Pandas</span>
-						<span>Matplotlib</span>
-						<span>ETL</span>
-						<span>Data Testing</span>
-					</div>
-				</div>
-
-				<div class="skill-card">
-					<div class="skill-icon">03</div>
-
-					<h3>Business Intelligence</h3>
-
-					<div class="skill-tags">
-						<span>Power BI</span>
-						<span>DAX</span>
-						<span>Power Query</span>
-						<span>Dashboard Design</span>
-					</div>
-				</div>
-
-				<div class="skill-card">
-					<div class="skill-icon">04</div>
-
-					<h3>Development & Workflow</h3>
-
-					<div class="skill-tags">
-						<span>Git</span>
-						<span>GitHub</span>
-						<span>GitHub Actions</span>
-						<span>VS Code</span>
-					</div>
-				</div>
-			</div>
+	<!-- RESUME -->
+	<section id="resume" class="resume-section">
+		<div>
+			<p class="section-label">RESUME</p>
+			<h2>Want to know more about my experience?</h2>
 		</div>
+
+		<a
+				href="/docs/Sotheavatey_Thao_Data_Analyst_Resume.pdf"
+				download
+				class="primary-btn"
+			>
+				Download My Resume
+			</a>
 	</section>
 
 	<!-- CONTACT -->
 	<section id="contact" class="contact-section">
-		<div class="contact-container">
-			<div class="contact-heading">
-				<p>GET IN TOUCH</p>
+		<p class="section-label">LET'S CONNECT</p>
 
-				<h2>Let’s Connect</h2>
+		<h2>Interested in working together?</h2>
 
-				<p>
-					I’m interested in data analyst, business intelligence, and analytics
-					opportunities where I can apply SQL, Python, Power BI, and data
-					visualization skills to solve real business problems.
-				</p>
-			</div>
+		<p>
+			I'm always interested in data analytics, business intelligence,
+			and technology opportunities.
+		</p>
 
-			<div class="contact-links">
-				<a
-					href="mailto:vatey8877@gmail.com"
-					class="contact-card"
-				>
-					<span>Email</span>
-					<strong>vatey8877@gmail.com</strong>
-				</a>
+		<div class="contact-links">
+			<a href="mailto:tabitzy@gmail.com">
+				Email Me
+			</a>
 
-				<a
-					href="https://www.linkedin.com/in/sotheavatey-t-aa0283170/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="contact-card"
-				>
-					<span>LinkedIn</span>
-					<strong>Connect with me</strong>
-				</a>
-
-				<a
-					href="https://github.com/vateythao"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="contact-card"
-				>
-					<span>GitHub</span>
-					<strong>View my projects</strong>
-				</a>
-			</div>
+			<a
+				href="https://github.com/vateythao"
+				target="_blank"
+				rel="noreferrer"
+			>
+				GitHub
+			</a>
 		</div>
 	</section>
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="footer-brand">NICHOLETHAO.COM</div>
+		<div class="footer-brand">
+			NICHOLETHAO.COM
+		</div>
+
 		<div class="footer-line"></div>
-		<div class="footer-text">Build. Learn. Create.</div>
+
+		<div class="footer-text">
+			Data • Insights • Decisions
+		</div>
 	</footer>
 </div>
 
@@ -486,20 +382,29 @@
 		position: relative;
 		min-height: 100vh;
 		overflow: hidden;
+
 		background:
 			radial-gradient(
 				circle at 50% -20%,
 				rgba(23, 102, 255, 0.15),
 				transparent 40%
 			),
-			linear-gradient(180deg, #07101f 0%, #050914 48%, #04070e 100%);
+			linear-gradient(
+				180deg,
+				#07101f 0%,
+				#050914 48%,
+				#04070e 100%
+			);
 	}
+
+	/* BACKGROUND */
 
 	.grid-background {
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
 		opacity: 0.13;
+
 		background-image:
 			linear-gradient(
 				rgba(94, 155, 255, 0.3) 1px,
@@ -510,8 +415,15 @@
 				rgba(94, 155, 255, 0.3) 1px,
 				transparent 1px
 			);
+
 		background-size: 52px 52px;
-		mask-image: linear-gradient(to bottom, black, transparent 72%);
+
+		mask-image:
+			linear-gradient(
+				to bottom,
+				black,
+				transparent 72%
+			);
 	}
 
 	.glow {
@@ -537,18 +449,24 @@
 		background: rgba(0, 184, 255, 0.11);
 	}
 
-	/* HEADER */
+	/* NAVIGATION */
 
 	.site-header {
 		position: relative;
-		z-index: 5;
+		z-index: 10;
+
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
 		width: min(1180px, calc(100% - 48px));
+
 		margin: 0 auto;
 		padding: 28px 0;
-		border-bottom: 1px solid rgba(126, 171, 255, 0.12);
+
+		border-bottom:
+			1px solid
+			rgba(126, 171, 255, 0.12);
 	}
 
 	.brand {
@@ -572,7 +490,8 @@
 		color: #dce7f7;
 		text-decoration: none;
 		font-size: 14px;
-		font-weight: 500;
+		font-weight: 600;
+
 		transition: color 0.2s ease;
 	}
 
@@ -585,13 +504,17 @@
 	.hero {
 		position: relative;
 		z-index: 2;
+
 		width: min(1180px, calc(100% - 48px));
 		min-height: 78vh;
+
 		margin: 0 auto;
 		padding: 90px 0;
+
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
+
 		gap: 70px;
 	}
 
@@ -601,7 +524,9 @@
 
 	.intro {
 		margin: 0 0 16px;
+
 		color: #4d9cff;
+
 		font-size: 13px;
 		font-weight: 800;
 		letter-spacing: 0.14em;
@@ -609,17 +534,28 @@
 
 	.hero h1 {
 		margin: 0 0 24px;
+
 		color: #ffffff;
-		font-size: clamp(52px, 7vw, 82px);
+
+		font-size: clamp(
+			52px,
+			7vw,
+			82px
+		);
+
 		font-weight: 750;
 		line-height: 1;
+
 		letter-spacing: -0.045em;
 	}
 
 	.hero-description {
 		max-width: 570px;
+
 		margin: 0 0 30px;
+
 		color: #aebbd0;
+
 		font-size: 18px;
 		line-height: 1.7;
 	}
@@ -628,15 +564,23 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px;
+
 		margin-bottom: 35px;
 	}
 
 	.hero-skills span {
 		padding: 8px 16px;
-		border: 1px solid #31415a;
+
+		border:
+			1px solid #31415a;
+
 		border-radius: 20px;
-		background: rgba(17, 27, 43, 0.55);
+
+		background:
+			rgba(17, 27, 43, 0.55);
+
 		color: #dce7f7;
+
 		font-size: 14px;
 	}
 
@@ -647,13 +591,19 @@
 	}
 
 	.primary-btn,
-	.secondary-btn {
+	.secondary-btn,
+	.github-btn {
 		display: inline-block;
+
 		padding: 13px 22px;
+
 		border-radius: 7px;
+
 		text-decoration: none;
+
 		font-size: 14px;
 		font-weight: 600;
+
 		transition:
 			background 0.2s ease,
 			border-color 0.2s ease,
@@ -662,7 +612,7 @@
 
 	.primary-btn {
 		background: #2678e8;
-		color: #ffffff;
+		color: white;
 	}
 
 	.primary-btn:hover {
@@ -678,55 +628,90 @@
 	.secondary-btn:hover {
 		border-color: #4d9cff;
 		color: #ffffff;
+
+		transform: translateY(-2px);
+	}
+
+	.github-btn {
+		border: 1px solid #bcc9dc;
+		color: #20334f;
+	}
+
+	.github-btn:hover {
+		border-color: #2678e8;
+		color: #2678e8;
+
 		transform: translateY(-2px);
 	}
 
 	.hero-visual {
 		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		width: 100%;
+		justify-content: center;
 	}
 
-	.dashboard-placeholder {
+	.dashboard-image-wrapper {
 		width: 100%;
-		max-width: 620px;
-		padding: 0;
-		border: 1px solid rgba(91, 154, 255, 0.35);
-		border-radius: 18px;
-		background: transparent;
+		max-width: 570px;
+
+		padding: 10px;
+
+		border:
+			1px solid #31415a;
+
+		border-radius: 16px;
+
+		background: #111b2b;
+
 		box-shadow:
-			0 30px 70px rgba(0, 0, 0, 0.4),
-			0 0 40px rgba(38, 120, 232, 0.14);
+			0 25px 60px
+			rgba(0, 0, 0, 0.32);
+
 		overflow: hidden;
 	}
 
-	.dashboard-placeholder img {
+	.dashboard-image {
+		display: block;
+
 		width: 100%;
 		height: auto;
-		display: block;
-		border-radius: 17px;
+
+		border-radius: 10px;
+
+		transition:
+			transform 0.3s ease;
 	}
 
-	/* RETAIL PROJECT */
+	.dashboard-image-wrapper:hover
+	.dashboard-image {
+		transform: scale(1.02);
+	}
+
+	/* FEATURED PROJECT */
 
 	.featured-project {
 		position: relative;
 		z-index: 2;
+
 		padding: 95px 8%;
+
 		background: #f7f9fc;
+
 		color: #0b1930;
 	}
 
 	.section-heading {
-		max-width: 800px;
+		max-width: 850px;
+
 		margin: 0 auto 60px;
+
 		text-align: center;
 	}
 
 	.section-heading > p {
 		margin: 0 0 12px;
+
 		color: #2678e8;
+
 		font-size: 13px;
 		font-weight: 800;
 		letter-spacing: 0.12em;
@@ -734,8 +719,15 @@
 
 	.section-heading h2 {
 		margin: 0 0 22px;
+
 		color: #0b1930;
-		font-size: clamp(30px, 4vw, 40px);
+
+		font-size: clamp(
+			30px,
+			4vw,
+			40px
+		);
+
 		letter-spacing: -0.03em;
 	}
 
@@ -743,163 +735,343 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+
 		gap: 10px;
 	}
 
 	.project-tags span {
 		padding: 8px 14px;
+
 		border-radius: 20px;
+
 		background: #e8eef8;
+
 		color: #20334f;
+
 		font-size: 13px;
 	}
 
 	.project-content {
 		max-width: 1180px;
+
 		margin: 0 auto;
+
 		display: grid;
-		grid-template-columns: 1fr 1.2fr;
+
+		grid-template-columns:
+			0.85fr 1.35fr;
+
 		gap: 70px;
+
 		align-items: center;
 	}
 
 	.project-description {
 		margin: 0 0 28px;
+
 		color: #526178;
+
 		font-size: 16px;
 		line-height: 1.8;
 	}
 
 	.project-highlights {
 		list-style: none;
+
 		padding: 0;
+
 		margin: 0 0 35px;
 	}
 
 	.project-highlights li {
+		display: flex;
+		align-items: flex-start;
+
+		gap: 10px;
+
 		margin-bottom: 16px;
+
 		color: #20334f;
+
 		font-size: 15px;
 		line-height: 1.5;
 	}
 
-	.project-image-placeholder {
-		height: 340px;
-		border: 1px solid #dfe5ee;
+	.check {
+		color: #2678e8;
+		font-weight: 800;
+	}
+
+	.project-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.project-image-wrapper {
+		width: 100%;
+
+		padding: 10px;
+
+		border:
+			1px solid #dfe5ee;
+
 		border-radius: 14px;
+
 		background: #ffffff;
-		box-shadow: 0 15px 40px rgba(20, 43, 75, 0.1);
+
+		box-shadow:
+			0 15px 40px
+			rgba(20, 43, 75, 0.12);
+
 		overflow: hidden;
 	}
 
-	.project-image-placeholder img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
+	.project-image {
 		display: block;
+
+		width: 100%;
+		height: auto;
+
+		border-radius: 8px;
+
+		transition:
+			transform 0.3s ease;
 	}
 
+	.project-image-wrapper:hover
+	.project-image {
+		transform: scale(1.015);
+	}
+
+	.image-caption {
+		margin: 14px 0 0;
+
+		text-align: center;
+
+		color: #718096;
+
+		font-size: 12px;
+	}
 	/* CAPSTONE */
 
-	.capstone-project {
+.capstone-section {
+	position: relative;
+	z-index: 2;
+	padding: 95px 8%;
+	background: #ffffff;
+	color: #0b1930;
+}
+
+.capstone-container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.capstone-label {
+	margin-bottom: 35px;
+	color: #2678e8;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.15em;
+}
+
+.capstone-content {
+	display: grid;
+	grid-template-columns: 1fr 0.8fr;
+	align-items: center;
+	gap: 80px;
+}
+
+.capstone-info h2 {
+	margin: 0 0 8px;
+	font-size: clamp(34px, 5vw, 48px);
+	letter-spacing: -0.035em;
+}
+
+.capstone-subtitle {
+	margin: 0 0 24px;
+	color: #2678e8;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.capstone-description {
+	max-width: 650px;
+	margin-bottom: 28px;
+	color: #526178;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+.capstone-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 9px;
+	margin-bottom: 32px;
+}
+
+.capstone-tags span {
+	padding: 8px 14px;
+	border-radius: 20px;
+	background: #e8eef8;
+	color: #20334f;
+	font-size: 12px;
+}
+
+.capstone-visual {
+	display: flex;
+	justify-content: center;
+}
+
+.research-card {
+	width: 100%;
+	max-width: 410px;
+	min-height: 300px;
+	padding: 40px;
+	border-radius: 18px;
+	background:
+		linear-gradient(
+			145deg,
+			#0a1a31,
+			#07101f
+		);
+	box-shadow:
+		0 22px 50px rgba(18, 47, 87, 0.2);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.research-icon {
+	display: grid;
+	place-items: center;
+	width: 58px;
+	height: 58px;
+	margin-bottom: 32px;
+	border: 1px solid #3f82db;
+	border-radius: 14px;
+	color: #62a7ff;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.research-card > p {
+	margin: 0 0 12px;
+	color: #4d9cff;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+}
+
+.research-card h3 {
+	margin: 0 0 24px;
+	font-size: 24px;
+	line-height: 1.35;
+}
+
+.research-card > span {
+	color: #8497b0;
+	font-size: 12px;
+}
+
+@media (max-width: 900px) {
+	.capstone-content {
+		grid-template-columns: 1fr;
+		gap: 45px;
+	}
+
+	.capstone-visual {
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 700px) {
+	.capstone-section {
+		padding: 70px 20px;
+	}
+}
+
+	/* SKILLS */
+
+	.skills-section {
 		position: relative;
 		z-index: 2;
-		padding: 100px 8%;
-		background: #eef3f9;
-		color: #0b1930;
+
+		padding: 95px 8%;
+
+		background: #071326;
 	}
 
-	.capstone-container {
+	.skills-heading {
 		max-width: 1180px;
-		margin: 0 auto;
-	}
 
-	.capstone-heading {
-		max-width: 900px;
-		margin: 0 auto 60px;
+		margin: 0 auto 45px;
+
 		text-align: center;
 	}
 
-	.capstone-heading > p {
-		margin: 0 0 12px;
-		color: #2678e8;
-		font-size: 13px;
-		font-weight: 800;
-		letter-spacing: 0.14em;
-	}
+	.skills-heading p {
+		margin: 0 0 10px;
 
-	.capstone-heading h2 {
-		margin: 0 0 24px;
-		color: #0b1930;
-		font-size: clamp(30px, 4vw, 42px);
-		line-height: 1.2;
-		letter-spacing: -0.03em;
-	}
+		color: #4d9cff;
 
-	.capstone-content {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 70px;
-		align-items: start;
-	}
-
-	.capstone-description {
-		margin: 0 0 28px;
-		color: #526178;
-		font-size: 16px;
-		line-height: 1.8;
-	}
-
-	.capstone-roadmap {
-		display: grid;
-		gap: 14px;
-	}
-
-	.roadmap-step {
-		display: flex;
-		align-items: center;
-		gap: 18px;
-		padding: 18px 20px;
-		border: 1px solid #dde5ef;
-		border-radius: 14px;
-		background: #ffffff;
-		box-shadow: 0 10px 28px rgba(20, 43, 75, 0.06);
-		transition:
-			transform 0.2s ease,
-			box-shadow 0.2s ease;
-	}
-
-	.roadmap-step:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 15px 32px rgba(20, 43, 75, 0.1);
-	}
-
-	.roadmap-step span {
-		flex-shrink: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 42px;
-		height: 42px;
-		border-radius: 50%;
-		background: #2678e8;
-		color: #ffffff;
 		font-size: 12px;
 		font-weight: 800;
+		letter-spacing: 0.15em;
 	}
 
-	.roadmap-content strong {
-		display: block;
-		margin-bottom: 5px;
-		color: #10213a;
+	.skills-heading h2 {
+		margin: 0;
+
+		font-size: 36px;
+	}
+
+	.skills-grid {
+		max-width: 1180px;
+
+		margin: 0 auto;
+
+		display: grid;
+
+		grid-template-columns:
+			repeat(5, 1fr);
+
+		gap: 15px;
+	}
+
+	.skill-card {
+		padding: 25px;
+
+		border:
+			1px solid
+			rgba(93, 144, 219, 0.18);
+
+		border-radius: 14px;
+
+		background:
+			linear-gradient(
+				145deg,
+				rgba(17, 32, 55, 0.85),
+				rgba(7, 17, 32, 0.9)
+			);
+	}
+
+	.skill-card h3 {
+		margin: 0 0 18px;
+
+		color: #ffffff;
+
 		font-size: 16px;
 	}
 
-	.roadmap-content p {
-		margin: 0;
-		color: #66768b;
+	.skill-card p {
+		margin: 8px 0;
+
+		color: #8ea0b9;
+
 		font-size: 13px;
-		line-height: 1.5;
 	}
 
 	/* ABOUT */
@@ -907,174 +1079,81 @@
 	.about-section {
 		position: relative;
 		z-index: 2;
-		padding: 100px 8%;
-		background: #07101f;
-		color: #ffffff;
-	}
 
-	.about-container {
-		max-width: 1180px;
-		margin: 0 auto;
-	}
+		padding: 95px 8%;
 
-	.about-heading {
-		max-width: 720px;
-		margin-bottom: 55px;
-	}
+		background: #ffffff;
 
-	.about-heading > p {
-		margin: 0 0 12px;
-		color: #4d9cff;
-		font-size: 13px;
-		font-weight: 800;
-		letter-spacing: 0.14em;
-	}
-
-	.about-heading h2 {
-		margin: 0;
-		font-size: clamp(32px, 4vw, 46px);
-		line-height: 1.2;
-		letter-spacing: -0.03em;
+		color: #0b1930;
 	}
 
 	.about-content {
+		max-width: 1100px;
+
+		margin: 0 auto;
+
 		display: grid;
-		grid-template-columns: 1fr 1.2fr;
-		gap: 70px;
+
+		grid-template-columns:
+			0.8fr 1.2fr;
+
+		gap: 80px;
+
 		align-items: start;
 	}
 
-	.about-text p {
-		margin: 0 0 22px;
-		color: #aebbd0;
-		font-size: 16px;
-		line-height: 1.8;
-	}
+	.section-label {
+		margin: 0 0 14px;
 
-	.about-cards {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 18px;
-	}
-
-	.about-card {
-		padding: 25px;
-		border: 1px solid rgba(91, 154, 255, 0.18);
-		border-radius: 14px;
-		background: rgba(15, 28, 48, 0.72);
-	}
-
-	.about-number {
-		display: inline-block;
-		margin-bottom: 18px;
-		color: #4d9cff;
-		font-size: 13px;
-		font-weight: 800;
-	}
-
-	.about-card h3 {
-		margin: 0 0 12px;
-		font-size: 18px;
-		color: #ffffff;
-	}
-
-	.about-card p {
-		margin: 0;
-		color: #8fa0b8;
-		font-size: 14px;
-		line-height: 1.65;
-	}
-
-	/* SKILLS */
-
-	.skills-section {
-		position: relative;
-		z-index: 2;
-		padding: 100px 8%;
-		background: #f7f9fc;
-		color: #0b1930;
-	}
-
-	.skills-container {
-		max-width: 1180px;
-		margin: 0 auto;
-	}
-
-	.skills-heading {
-		max-width: 700px;
-		margin: 0 auto 55px;
-		text-align: center;
-	}
-
-	.skills-heading > p:first-child {
-		margin: 0 0 12px;
 		color: #2678e8;
-		font-size: 13px;
+
+		font-size: 12px;
 		font-weight: 800;
-		letter-spacing: 0.14em;
+		letter-spacing: 0.15em;
 	}
 
-	.skills-heading h2 {
-		margin: 0 0 20px;
-		color: #0b1930;
-		font-size: clamp(32px, 4vw, 44px);
+	.about-section h2 {
+		margin: 0;
+
+		font-size: 38px;
+
 		letter-spacing: -0.03em;
 	}
 
-	.skills-intro {
-		margin: 0;
-		color: #65748a;
+	.about-text p {
+		margin: 0 0 20px;
+
+		color: #526178;
+
 		font-size: 16px;
 		line-height: 1.8;
 	}
 
-	.skills-grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 22px;
-	}
+	/* RESUME */
 
-	.skill-card {
-		padding: 30px;
-		border: 1px solid #e0e7f0;
-		border-radius: 16px;
-		background: #ffffff;
-		box-shadow: 0 12px 35px rgba(20, 43, 75, 0.06);
-		transition:
-			transform 0.2s ease,
-			box-shadow 0.2s ease;
-	}
+	.resume-section {
+		position: relative;
+		z-index: 2;
 
-	.skill-card:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 18px 40px rgba(20, 43, 75, 0.1);
-	}
+		max-width: 1180px;
 
-	.skill-icon {
-		margin-bottom: 20px;
-		color: #2678e8;
-		font-size: 13px;
-		font-weight: 800;
-	}
+		margin: 0 auto;
 
-	.skill-card h3 {
-		margin: 0 0 20px;
-		color: #10213a;
-		font-size: 20px;
-	}
+		padding: 90px 24px;
 
-	.skill-tags {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
+		align-items: center;
+		justify-content: space-between;
+
+		gap: 40px;
 	}
 
-	.skill-tags span {
-		padding: 8px 13px;
-		border-radius: 20px;
-		background: #eef3fa;
-		color: #334861;
-		font-size: 13px;
+	.resume-section h2 {
+		max-width: 650px;
+
+		margin: 0;
+
+		font-size: 34px;
 	}
 
 	/* CONTACT */
@@ -1082,82 +1161,62 @@
 	.contact-section {
 		position: relative;
 		z-index: 2;
-		padding: 100px 8%;
-		background: #07101f;
-		color: #ffffff;
-	}
 
-	.contact-container {
-		max-width: 1180px;
-		margin: 0 auto;
-	}
+		padding: 95px 20px;
 
-	.contact-heading {
-		max-width: 760px;
-		margin: 0 auto 50px;
+		background: #f7f9fc;
+
+		color: #0b1930;
+
 		text-align: center;
 	}
 
-	.contact-heading > p:first-child {
-		margin: 0 0 12px;
-		color: #4d9cff;
-		font-size: 13px;
-		font-weight: 800;
-		letter-spacing: 0.14em;
+	.contact-section h2 {
+		margin: 0 0 15px;
+
+		font-size: 38px;
 	}
 
-	.contact-heading h2 {
-		margin: 0 0 18px;
-		font-size: clamp(32px, 4vw, 44px);
-		letter-spacing: -0.03em;
-	}
+	.contact-section > p:not(.section-label) {
+		max-width: 650px;
 
-	.contact-heading p:last-child {
-		margin: 0;
-		color: #aebbd0;
-		font-size: 16px;
-		line-height: 1.8;
+		margin: 0 auto 30px;
+
+		color: #526178;
+
+		line-height: 1.7;
 	}
 
 	.contact-links {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-	}
-
-	.contact-card {
 		display: flex;
-		flex-direction: column;
-		gap: 8px;
-		padding: 28px;
-		border: 1px solid rgba(91, 154, 255, 0.18);
-		border-radius: 16px;
-		background: rgba(15, 28, 48, 0.72);
-		text-decoration: none;
-		transition:
-			transform 0.2s ease,
-			border-color 0.2s ease,
-			background 0.2s ease;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		gap: 12px;
 	}
 
-	.contact-card:hover {
-		transform: translateY(-4px);
-		border-color: rgba(91, 154, 255, 0.5);
-		background: rgba(19, 36, 61, 0.9);
-	}
+	.contact-links a {
+		padding: 12px 22px;
 
-	.contact-card span {
-		color: #4d9cff;
-		font-size: 12px;
-		font-weight: 800;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-	}
+		border-radius: 7px;
 
-	.contact-card strong {
+		background: #2678e8;
+
 		color: #ffffff;
-		font-size: 16px;
+
+		text-decoration: none;
+
 		font-weight: 600;
+
+		transition:
+			background 0.2s ease,
+			transform 0.2s ease;
+	}
+
+	.contact-links a:hover {
+		background: #408df4;
+
+		transform: translateY(-2px);
 	}
 
 	/* FOOTER */
@@ -1165,34 +1224,62 @@
 	footer {
 		position: relative;
 		z-index: 2;
+
 		display: flex;
 		align-items: center;
-		width: min(1180px, calc(100% - 48px));
+
+		width: min(
+			1180px,
+			calc(100% - 48px)
+		);
+
 		margin: 0 auto;
+
 		padding: 28px 0 34px;
+
 		color: #596982;
+
 		font-size: 9px;
 		font-weight: 700;
+
 		letter-spacing: 0.14em;
 	}
 
 	.footer-line {
 		height: 1px;
 		flex: 1;
+
 		margin: 0 18px;
-		background: rgba(110, 155, 222, 0.11);
+
+		background:
+			rgba(110, 155, 222, 0.11);
 	}
 
 	/* TABLET */
 
+	@media (max-width: 1000px) {
+
+		.skills-grid {
+			grid-template-columns:
+				repeat(3, 1fr);
+		}
+
+		.project-content {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	@media (max-width: 900px) {
+
 		.nav-links {
 			gap: 18px;
 		}
 
 		.hero {
 			grid-template-columns: 1fr;
+
 			padding: 70px 0 85px;
+
 			text-align: center;
 		}
 
@@ -1210,45 +1297,35 @@
 			justify-content: center;
 		}
 
-		.hero-visual {
-			justify-content: center;
-		}
-
-		.project-content {
-			grid-template-columns: 1fr;
-			gap: 45px;
-		}
-
-		.capstone-content {
-			grid-template-columns: 1fr;
-			gap: 45px;
+		.dashboard-image-wrapper {
+			max-width: 650px;
 		}
 
 		.about-content {
 			grid-template-columns: 1fr;
-			gap: 40px;
+
+			gap: 35px;
 		}
 
-		.about-cards {
-			grid-template-columns: 1fr;
-		}
+		.resume-section {
+			flex-direction: column;
 
-		.skills-grid {
-			grid-template-columns: 1fr;
-		}
-
-		.contact-links {
-			grid-template-columns: 1fr;
+			align-items: flex-start;
 		}
 	}
 
 	/* MOBILE */
 
 	@media (max-width: 700px) {
+
 		.site-header {
-			width: min(100% - 32px, 1180px);
-			align-items: flex-start;
-			gap: 20px;
+			width:
+				min(
+					100% - 32px,
+					1180px
+				);
+
+			padding-top: 20px;
 		}
 
 		.nav-links {
@@ -1256,36 +1333,64 @@
 		}
 
 		.hero {
-			width: min(100% - 32px, 1180px);
+			width:
+				min(
+					100% - 32px,
+					1180px
+				);
+
 			min-height: auto;
+
+			padding: 65px 0;
 		}
 
 		.hero h1 {
-			font-size: clamp(48px, 15vw, 70px);
+			font-size:
+				clamp(
+					48px,
+					15vw,
+					70px
+				);
 		}
 
 		.hero-description {
 			font-size: 16px;
 		}
 
-		.featured-project,
-		.capstone-project,
-		.about-section,
-		.skills-section,
-		.contact-section {
+		.featured-project {
 			padding: 70px 20px;
 		}
 
-		.project-image-placeholder {
-			height: 260px;
+		.skills-section {
+			padding: 70px 20px;
 		}
 
-		.roadmap-step {
-			align-items: flex-start;
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.about-section {
+			padding: 70px 20px;
+		}
+
+		.about-section h2 {
+			font-size: 30px;
+		}
+
+		.resume-section {
+			padding: 70px 20px;
+		}
+
+		.contact-section h2 {
+			font-size: 30px;
 		}
 
 		footer {
-			width: min(100% - 32px, 1180px);
+			width:
+				min(
+					100% - 32px,
+					1180px
+				);
 		}
 	}
 </style>
